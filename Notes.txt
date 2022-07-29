@@ -1,0 +1,54 @@
+3. Versioning 
+4. Swagger 
+5. Connection to MSSQL server, Oracle and Mongo DB 
+
+SOLID.
+Test all request types
+Connect to MongoDB.
+Health checks
+Db relationships.
+OOP in C#
+DI
+Scoped, Transiet, Singleton.
+DbContext
+How to protect APIs
+iEnumerable, iList, iCollection
+Read unit of work, generic repository pattern.
+Fields and properties.
+Getters and setters.
+Context class meaning.
+Secrets Manager
+EF CORE.TOOLS/DESIGN
+
+1. Create Model folder and model classes.
+2. Get connection String.
+	- Install ef core, ef core sql server, ef core tools
+3. Create DataContext class and inject as a service.
+4. Initiate migration and update database.
+5. Create a generic repo. Other repos would inherit it.
+6. Register the repo as a scoped service.
+
+S Single Responsibility principle - a class should only do one thing.
+O Open closed principle - a class should not be open to modification but to extension(abstract classes).
+L Liskov substitution principle - Derived classes should be able to serve as a substitute for their base classes.
+I Interface segregation principle - a class should not be forced to depend/implement methods it does not use. 
+D Dependency inversion principle
+
+Tight coupling
+Duplicate code
+Less testable
+
+Reusability
+Readability
+Testability
+Loosely coupled
+
+
+Mongo
+- Create your model
+1. Install mongodb.driver and mongodb.bson
+2. Save Connection String and DatabaseName in app settings
+3. Map with the MongoDbContext class in program.cs
+4. Create MongoContext class
+	-Inject MongoDbContext into it.
+5. 
